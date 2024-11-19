@@ -1,4 +1,4 @@
-from naves.config import *
+from config_naves.config import *
 ORIGIN_SIZE =(50,50)
 MIN_WIDTH = 10
 MAX_WIDTH = 60
@@ -10,7 +10,7 @@ class Enemy(pygame.sprite.Sprite):
         self.width =random.randint(MIN_WIDTH,MAX_WIDTH)
         self.height =random.randint(self.width/ORIGIN_SIZE[0])*ORIGIN_SIZE[1]
 
-        self.surf = pygame.image.load().convert_alpha()
+        self.surf = pygame.image.load("code/naves/images/test.png").convert_alpha()
         self.surf = pygame.transform.scale(self.surf,(self.width,self.height))
         self.mask = pygame.mask.from_surface(self.surf)
 

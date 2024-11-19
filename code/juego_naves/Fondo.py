@@ -1,4 +1,4 @@
-from naves.config import *
+from config_naves.config import *
 
 class Fondo(pygame.sprite.Sprite):
     def __init__(self):

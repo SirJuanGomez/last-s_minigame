@@ -1,4 +1,4 @@
-from naves.config import *
+from config_naves.config import *
 
 class webcam:
     def __init__(self):
